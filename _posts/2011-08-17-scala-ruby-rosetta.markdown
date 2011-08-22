@@ -92,11 +92,25 @@ of hash literals, syntactically, without the addition of specialized syntax for 
 <script src="https://gist.github.com/1160045.js"></script>
 
 <a name="switches"></a>
-## Switch statements and pattern matching
+## Case statements and pattern matching
+
+I don't care much for mentioning case statements in Ruby on their own.  They are, however, the closest
+corollary to [pattern matching][13] in Scala.  Scala's pattern matching support is very powerful.  I'll present
+how you would accomplish some similar tasks in each and then show a few more powerful pattern matching
+examples in Scala.
+
+#### Ruby case statements
+<script src="https://gist.github.com/1160828.js"></script>
+
+#### Scala pattern matching
+<script src="https://gist.github.com/1161420.js"></script>
+
+## Conculsion
+
+So that's it.  A few examples of code in the two languages to accomplish similar tasks.
 
 [1]: http://www.ruby-doc.org/core/classes/Enumerable.html
-[2]: http://www.scala-lang.org/api/current/index.html#scala.collection.Seq
-[3]: http://en.wikipedia.org/wiki/Mixin
+[2]: http://www.scala-lang.org/api/current/index.html#scala.collection.Seq [3]: http://en.wikipedia.org/wiki/Mixin
 [4]: http://rails.rubyonrails.org/classes/ActiveSupport/CoreExtensions/Array/Grouping.html#M000833
 [5]: http://rosettacode.org/wiki/Main_Page
 [6]: http://www.ruby-doc.org/core/classes/Enumerable.html#M001491
@@ -106,3 +120,4 @@ of hash literals, syntactically, without the addition of specialized syntax for 
 [10]: #hashmaps
 [11]: #switches
 [12]: http://www.ruby-doc.org/core/classes/Array.html#M000255
+[13]: http://kerflyn.wordpress.com/2011/02/14/playing-with-scalas-pattern-matching/
