@@ -106,7 +106,8 @@ examples in Scala.
 <script src="https://gist.github.com/1161420.js"></script>
 
 [1]: http://www.ruby-doc.org/core/classes/Enumerable.html
-[2]: http://www.scala-lang.org/api/current/index.html#scala.collection.Seq [3]: http://en.wikipedia.org/wiki/Mixin
+[2]: http://www.scala-lang.org/api/current/index.html#scala.collection.Seq
+[3]: http://en.wikipedia.org/wiki/Mixin
 [4]: http://rails.rubyonrails.org/classes/ActiveSupport/CoreExtensions/Array/Grouping.html#M000833
 [5]: http://rosettacode.org/wiki/Main_Page
 [6]: http://www.ruby-doc.org/core/classes/Enumerable.html#M001491
