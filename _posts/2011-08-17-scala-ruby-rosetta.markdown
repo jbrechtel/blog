@@ -105,10 +105,6 @@ examples in Scala.
 #### Scala pattern matching
 <script src="https://gist.github.com/1161420.js"></script>
 
-## Conculsion
-
-So that's it.  A few examples of code in the two languages to accomplish similar tasks.
-
 [1]: http://www.ruby-doc.org/core/classes/Enumerable.html
 [2]: http://www.scala-lang.org/api/current/index.html#scala.collection.Seq [3]: http://en.wikipedia.org/wiki/Mixin
 [4]: http://rails.rubyonrails.org/classes/ActiveSupport/CoreExtensions/Array/Grouping.html#M000833
