@@ -21,7 +21,7 @@ question and let me know about it in the comments.
 * [Mixins][8]
 * [Collections][9]
 * [Hash maps][10]
-* [Switch and pattern matching][11]
+* [Case statements and pattern matching][11]
 
 <a name="classes"></a>
 ## Classes
