@@ -6,7 +6,7 @@ layout: post
 
 ### Using Scala on Android
 
-(TLDR; go here [Android Scala Installer](https://github.com/mobilemagicdevelopers/Android-Scala-Installer))
+(TLDR; go here [Android Scala Installer](https://github.com/scala-android-libs/scala-android-libs))
 
 I'm a big proponent of Scala for Android development. Scala is a modern JVM language with
 great Java interopability. This makes it ideal if you're tired of writing Java. I enjoy writing
