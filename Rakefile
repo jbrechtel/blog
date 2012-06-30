@@ -7,5 +7,5 @@ task :build do
 end
 
 task :deploy do
-  sh "rsync -avzr _site/ http@nevercertain.com:/srv/apps/nevercertain/"
+  sh "rsync -avzr _site/ www-data@nevercertain.com:/www/nevercertain/"
 end
