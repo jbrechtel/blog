@@ -1,34 +1,41 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="James Brechtel" />
-    <meta name='viewport' content='width=device-width; user-scalable=no'/>
-    <title>{{ page.title }}</title>
-    <link href='http://fonts.googleapis.com/css?family=Voltaire|Carme' rel='stylesheet' type='text/css'/>
-    <link href='/stylesheets/site.css' rel='stylesheet' type='text/css'/>
-    <link href='/atom.xml' rel='alternate' type='application/atom+xml' title='Atom feed for nevercertain.com'/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>My Awesome Project by Harrison Ford</title>
+    
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href/="stylesheets/pygment_trac.css">
+    <script src="/javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30955754-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
   </head>
   <body>
-    <header>
-      <section class="blog_title">
-        <a href="/"> never certain - a blog by James Brechtel </a>
-      </aside>
-    </header>
-    {{ content }}
+    <div class="wrapper">
+      {{ content }}
+      <footer>
+        <p>using the <a href="https://github.com/broccolini/dinky">Dinky theme</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
   </body>
-  <script type="text/javascript">
-    //<![CDATA[
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-9950155-2']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    //]]>
-  </script>
 </html>
+

@@ -3,9 +3,31 @@ layout: layout
 title: james brechtel writes here
 ---
 
+<header>
+  <h1 class="header">Never Certain</h1>
+  <p class="header">James Brechtel</p>
+    <ul>
+      <li>
+        <a href="http://github.com/jbrechtel">GitHub</a><br/>
+      </li>
+      <li>
+        <a href="http://thoughtworks.com">ThoughtWorks</a><br/>
+      </li>
+      <li>
+        <a href="http://goodreads.com/jbrechtel">Goodreads</a><br/>
+      </li>
+      <li>
+        <a href="https://plus.google.com/106795334569324752285/posts">Google+</a><br/>
+      </li>
+      <li>
+        <a href="https://market.android.com/developer?pub=Mobile Magic Developers">Mobile Magic</a><br/>
+      </li>
+    </ul>
+</header>
+
 <nav>
   <section>
-    <header>Posts</header>
+    <h2>Posts</h2>
       {% for post in site.posts %}
         <a href="{{ post.url }}">{{ post.title }}</a> <br/>
         <span class="date">- {{ post.date | date: "%B %e, %Y" }}</span> <br/>
