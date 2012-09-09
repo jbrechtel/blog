@@ -22,7 +22,7 @@ The Typesafe stack also includes a tool called 'giter8' that will create SBT pro
 ### Build tools
 [Zinc, Scala incremental compiler](https://github.com/typesafehub/zinc)
 
-For a while SBT was the only reasonable option to use for Scala because otherwise compilation times were slow for medium-large codebases. SBT is fast because it has an incremental compiler. Recently SBT's incremental compiler was been extracted to a separate, standalone library that other build tools can use. The Scala plugin for Maven uses it and I believe Gradle does as well. So as far as I know, today the good options for building are SBT, Maven, and I think Gradle.
+For a while SBT was the only reasonable option to use for Scala because otherwise compilation times were slow for medium-large codebases. SBT is fast because it has an incremental compiler. Recently SBT's incremental compiler was extracted to a separate, standalone library that other build tools can use. The Scala plugin for Maven uses it and I believe Gradle does as well. So as far as I know, today the good options for building are SBT, Maven, and I think Gradle.
 
 ### SBT
 [SBT Getting started](https://github.com/harrah/xsbt/wiki/Getting-Started-Welcome)
@@ -42,6 +42,17 @@ SBT has a pretty healthy set of plugins too, everything from Android build suppo
 [IntelliJ](http://confluence.jetbrains.net/display/SCA/Scala+Plugin+for+IntelliJ+IDEA)
 
 Both IntelliJ and Eclipse have excellent Scala support. I tend to use Vim to edit Scala code but I do check out IntelliJ and Eclipse from time to time. Support for each IDE is actively maintained and they have both gotten mature in the past year.
+
+### Testing
+[Specs2](http://etorreborre.github.com/specs2/)
+[ScalaTest](http://www.scalatest.org/)
+[ScalaCheck](http://code.google.com/p/scalacheck/)
+
+There are two major testing frameworks for Scala. Specs2 and ScalaTest. I don't see a huge difference between the two. ScalaTest has support for both more traditional style assertions as well as fancier matchers. Specs2, I think, has a more extensive set of matchers. I've used both and have had no problems with either.
+
+ScalaCheck is a different sort of test framework that you'd likely use in conjunction with ScalaTest or Specs2. ScalaCheck lets you write tests about properties your code should have and then have it verify those properties against a variety of generated test data. It's inspired by QuickCheck from Haskell. It's a very interesting style of testing and an excellent fit for some problems.
+
+If you don't want to learn multiple new things at once then you can always stick to JUnit or whatever else you're used to from the Java world. Scala works with them just fine. Both Specs2 and ScalaTest have support for Mockito as well.
 
 ### Implicit.ly
 [Implicit.ly](http://notes.implicit.ly/)
