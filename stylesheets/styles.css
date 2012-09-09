@@ -27,8 +27,8 @@ time, mark, audio, video {
 
 body {
   padding:10px 50px 0 0;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+  font-family:"Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
 	color: #232323;
 	background-color: #FBFAF7;
 	margin: 0;
@@ -204,6 +204,7 @@ td {
 /* Header */
 
 header {
+  font-family:"Coda", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #171717;
 	color: #FDFDFB;
   width:170px;
@@ -258,7 +259,7 @@ header li {
   height:15px;
 	margin-bottom: 12px;
 	line-height: 1em;
-	padding: 6px 6px 6px 7px;
+	padding: 10px 10px 10px 11px;
 
 	background: #AF0011;
 	background: -moz-linear-gradient(top, #AF0011 0%, #820011 100%);
