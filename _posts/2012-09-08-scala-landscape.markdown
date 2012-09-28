@@ -3,9 +3,6 @@ title: The Scala landscape
 published: true
 layout: post
 ---
-
-TLDR; SBT+(Vim || IntelliJ || Eclipse)+Play, but there are lots of good options. 
-
 ### Scala overview
 
 Below is an overview of what's going on with Scala today (9/8/2012) for a Scala newcomer. This post will be quickly outdated and may not be very useful if you're using Scala today.
