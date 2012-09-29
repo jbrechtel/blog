@@ -1,6 +1,6 @@
 function checkChat() {
   var domain = document.domain == 'localhost' ? document.domain : 'beta.nevercertain.com';
-  ws = new WebSocket('ws://beta.'+document.domain+':8080/');
+  ws = new WebSocket('ws://'+domain+':8080/');
   ws.onopen = function(event) {
     ws.send(userDataForChat());
   };
