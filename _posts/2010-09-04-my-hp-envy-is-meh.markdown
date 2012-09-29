@@ -1,6 +1,7 @@
 ---
 title: My HP Envy 14 is 'meh'
 layout: post
+tags: hardware
 ---
 
 I recently bought an [HP Envy 14][1]. I followed news about the laptop before

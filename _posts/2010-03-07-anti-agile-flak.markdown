@@ -1,6 +1,7 @@
 ---
 title: Anti-Agile flak
 layout: post
+tags: swdev
 ---
 
 There were a couple of [interesting][1] [posts][2] on InfoQ last week about

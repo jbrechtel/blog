@@ -2,6 +2,7 @@
 title: Android Scala Installer
 published: true
 layout: post
+tags: swdev android scala
 ---
 
 ### Using Scala on Android

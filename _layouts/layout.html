@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ page.title }}</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Coda|Karla' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href/="stylesheets/pygment_trac.css">
-    <script src="/javascripts/scale.fix.js"></script>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href/="/stylesheets/pygment_trac.css">
+    <style type="text/css">
+      body {
+        position: relative;
+        padding-top: 80px;
+      }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script type="text/javascript" src="/javascript/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/javascript/bootstrap.min.js"></script>
 
 		<script type="text/javascript">
 
@@ -29,14 +36,43 @@
 		</script>
 
   </head>
-  <body>
-    <div class="wrapper">
-      {{ content }}
-      <footer>
-        <p>using the <a href="https://github.com/broccolini/dinky">Dinky theme</a></small></p>
-      </footer>
+  <body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Never certain</a>
+          <div class="nav-collapse" id="main-menu">
+            <ul class="nav" id="main-menu-left">
+              <li><a href="http://www.mobilemagicdevelopers.com">MobileMagic</a></li>
+              <li><a id="swatch-link" href="http://www.thoughtworks.com">ThoughtWorks</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">GitHub <b class="caret"></b></a>
+                <ul class="dropdown-menu" id="swatch-menu">
+                  <li><a href="https://github.com/jbrechtel/robospecs">RoboSpecs</a></li>
+                  <li><a href="https://github.com/jbrechtel/plant">Plant</a></li>
+                  <li><a href="https://github.com/mobilemagicdevelopers/Android-Scala-Installer">Android Scala Installer</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Social<b class="caret"></b></a>
+                <ul class="dropdown-menu" id="swatch-menu">
+                  <li><a href="http://twitter.com/jbrechtel">Twitter</a></li>
+                  <li><a href="https://plus.google.com/106795334569324752285/posts">Google+</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+
+    <section id="content" class="container">
+    {{ content }}
+    </section>
   </body>
 </html>
-

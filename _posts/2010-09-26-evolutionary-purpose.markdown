@@ -1,6 +1,7 @@
 ---
 title: Evolutionary purpose
 layout: post
+tags: books
 ---
 
 I am really interested in how our minds work. Not

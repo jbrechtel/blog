@@ -1,6 +1,7 @@
 ---
 title: Plant Test Factory for .NET
 layout: post
+tags: dotnet swdev
 ---
 
 [Plant][1] is a test factory for .NET 4.0. I created Plant because factories

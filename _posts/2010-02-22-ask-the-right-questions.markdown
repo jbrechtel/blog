@@ -1,6 +1,7 @@
 ---
 title: Ask the right questions
 layout: post
+tags: jobs swdev
 ---
 
 A few months ago, my friend [Patrick Caldwell][1] started a series of blog

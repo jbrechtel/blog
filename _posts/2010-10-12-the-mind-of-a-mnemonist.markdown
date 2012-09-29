@@ -1,6 +1,7 @@
 ---
 title: The Mind of a Mnemonist
 layout: post
+tags: books
 ---
 
 I just finished reading [The Mind of a Mnemonist][1] by A.R. Luria.  The book

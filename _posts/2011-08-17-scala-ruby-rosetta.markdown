@@ -2,6 +2,7 @@
 title: Scala and Ruby Rosetta Stone
 published: true
 layout: post
+tags: scala ruby swdev
 ---
 
 I write a lot of Ruby at work and Scala in my spare time.

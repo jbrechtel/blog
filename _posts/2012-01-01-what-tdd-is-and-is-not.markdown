@@ -2,6 +2,7 @@
 title: What TDD is and is not
 published: true
 layout: post
+tags: swdev
 ---
 
 ### Let's define "practicing TDD"

@@ -2,6 +2,7 @@
 title: Building Android Apps with Scala - IntelliJ
 published: true
 layout: post
+tags: scala android swdev
 ---
 
 **note to the reader** This is the third in a series of posts about getting

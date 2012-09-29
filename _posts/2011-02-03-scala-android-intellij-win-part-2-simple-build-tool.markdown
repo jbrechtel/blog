@@ -1,6 +1,7 @@
 ---
 title: Building Android Apps with Scala - simple-build-tool
 layout: post
+tags: scala android swdev
 ---
 
 This is part 2 in my series on getting started with Android development in

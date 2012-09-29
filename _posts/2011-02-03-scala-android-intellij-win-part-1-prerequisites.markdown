@@ -2,6 +2,7 @@
 title: Building Android Apps with Scala - pre-requisites
 excerpt: What software you'll need
 layout: post
+tags: scala android swdev
 ---
 
 This is the first in a series of blog posts about getting started with

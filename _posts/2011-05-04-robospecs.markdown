@@ -2,6 +2,7 @@
 title: RoboSpecs - Android testing with Scala
 published: true
 layout: post
+tags: scala android swdev
 ---
 
 I recently published [Robospecs](https://github.com/jbrechtel/robospecs).  Robospecs helps you write Android applications.

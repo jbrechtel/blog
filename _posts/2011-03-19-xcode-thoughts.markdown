@@ -2,6 +2,7 @@
 title: XCode - Some thoughts
 published: true
 layout: post
+tags: iphone xcode swdev
 ---
 
 Warning:  This is a bit of a rant.  It's mostly intended to be therapeutic for myself.

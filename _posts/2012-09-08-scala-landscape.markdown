@@ -2,6 +2,7 @@
 title: The Scala landscape
 published: true
 layout: post
+tags: scala swdev
 ---
 ### Scala overview
 
