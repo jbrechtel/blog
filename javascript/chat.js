@@ -29,8 +29,8 @@ function logMessage(message) {
   }
   var messageElement = $('<h5/>');
   messageElement.attr('class',cssClass).text(message);
-  console.log(messageElement);
   $('#chat_messages').append(messageElement);
+  $('#chat_messages').scrollTop(999999);
 }
 
 function startChat() {
@@ -41,6 +41,9 @@ function startChat() {
 function sendChatMessage(event) {
   event.preventDefault();
   var message = $('#chat_message').val();
+  if(message === "") {
+    return;
+  }
   $('#chat_message').val('');
   ws.send(message);
 }

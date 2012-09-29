@@ -1,15 +1,13 @@
-<div class="modal hide" id="chat">
-  <button type="button" class="btn btn-danger pull-right" style="margin:15px" data-dismiss="alert">close</button>
-  <div class="modal-header">
-    <h4>Chatting with James</h4>
-  </div>
-
-  <div class="modal-body">
-    <div id="chat_messages" style="overflow:auto; height:300px">
-    </div>
-    <div class="input-append">
-      <input class="span4" id="chat_message" type="text" placeholder="enter your message"></input>
-      <button class="btn btn-primary" id="chat_send">send</button>
+<div id="chat" class="row navbar navbar-fixed-bottom">
+  <div class="span5" id="chat_body">
+    <a href="#" id="chat_target">Chatting with James</a>
+    <div>
+      <div id="chat_messages" style="overflow:auto; height:150px">
+      </div>
+      <div class="form-inline">
+        <input class="input-small span4" id="chat_message" type="text" placeholder="enter your message"></input>
+        <button class="btn btn-primary" id="chat_send">send</button>
+      </div>
     </div>
   </div>
 </div>
