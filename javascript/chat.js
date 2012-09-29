@@ -1,5 +1,5 @@
 function checkChat() {
-  ws = new WebSocket('ws://localhost:8080/');
+  ws = new WebSocket('ws://'+document.domain+':8080/');
   ws.onopen = function(event) {
     ws.send(userDataForChat());
   };
