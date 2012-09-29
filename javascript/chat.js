@@ -1,13 +1,14 @@
 function checkChat() {
   ws = new WebSocket('ws://localhost:8080/');
   ws.onopen = function(event) {
-    console.log(usernameForChat());
-    ws.send(usernameForChat());
+    ws.send(userDataForChat());
   };
 
   ws.onmessage = function(event) {
     if(event.data == "!hello!") {
       startChat();
+    } else if(event.data == "!bye!") {
+      endChat();
     } else {
       logMessage(event.data);
     }
@@ -18,8 +19,9 @@ function checkChat() {
   }
 }
 
-function usernameForChat() {
-  return $.cookie('chat-user') || 'user';
+function userDataForChat() {
+  var username = $.cookie('chat-user') || 'user';
+  return username+"@"+window.location;
 }
 
 function logMessage(message) {
@@ -36,6 +38,11 @@ function logMessage(message) {
 function startChat() {
   $('#chat').show();
   $('#chat_message').focus();
+}
+
+function endChat() {
+  ws.close();
+  $('#chat').hide();
 }
 
 function sendChatMessage(event) {
@@ -55,5 +62,10 @@ $(document).ready(function() {
     if(event.which == 13) {
       sendChatMessage(event);
     }
+  });
+
+  $('#chat_target').click(function(event) {
+    event.preventDefault();
+    $('#chat_content').toggle();
   });
 });
