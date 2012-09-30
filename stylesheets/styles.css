@@ -14,3 +14,11 @@
   overflow:auto;
   height:150px;
 }
+
+.navbar {
+  font-family: Syncopate, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.label {
+  font-family: Lekton, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
