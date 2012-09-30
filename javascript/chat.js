@@ -5,13 +5,32 @@ function checkChat() {
     ws.send(userDataForChat());
   };
 
+
+  var messageLogger = logMessage;
   ws.onmessage = function(event) {
+    console.log(event.data);
     if(event.data == "!hello!") {
-      startChat();
+      startChat(false);
+    } else if(event.data == "!hello-james!") {
+      console.log('asking for it');
+      if(window.webkitNotifications.checkPermission() == 0) {
+        messageLogger = logMessageWithNotification;
+      }
+
+      $('#chat_send').click(function() {
+        if(window.webkitNotifications.checkPermission() != 0) {
+          window.webkitNotifications.requestPermission(function() {
+            if(window.webkitNotifications.checkPermission() == 0) {
+              messageLogger = logMessageWithNotification;
+            }
+          });
+        }
+      });
+      startChat(true);
     } else if(event.data == "!bye!") {
       endChat();
     } else {
-      logMessage(event.data);
+      messageLogger(event.data);
     }
   };
 
@@ -36,7 +55,14 @@ function logMessage(message) {
   $('#chat_messages').scrollTop(999999);
 }
 
-function startChat() {
+function logMessageWithNotification(message) {
+  logMessage(message);
+  if(!document.hasFocus()) {
+    window.webkitNotifications.createNotification("", "Neverchat", message).show();
+  }
+}
+
+function startChat(showNotifications) {
   $('#chat').show();
   $('#chat_message').focus();
 }
