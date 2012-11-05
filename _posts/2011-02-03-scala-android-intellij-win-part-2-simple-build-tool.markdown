@@ -193,7 +193,7 @@ for part 3 where I’ll talk about setting up IntelliJ to use all of these
 wonderful Sbt tasks and then finally part 4 where we will use IntelliJ’s
 test runner to run our project’s unit tests.
 
-   [1]: http://nevercertain.com/index.php/2011/02/scala-android-intellij-win-part-1-prerequisites/
+   [1]: http://nevercertain.com/2011/02/03/scala-android-intellij-win-part-1-prerequisites.html
 
    [2]: http://martinfowler.com/articles/continuousIntegration.html
 

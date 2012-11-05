@@ -116,7 +116,7 @@ You can setup other build configurations to execute additional Sbt targets.
 Next time we’ll cover running your tests with the awesome [ScalaTest][4] framework
 from inside IntelliJ.
 
-   [1]: http://nevercertain.com/index.php/2011/02/scala-android-intellij-win-part-1-prerequisites
-   [2]: http://nevercertain.com/index.php/2011/02/scala-android-intellij-win-part-2-simple-build-tool
+   [1]: http://nevercertain.com/2011/02/03/scala-android-intellij-win-part-1-prerequisites.html
+   [2]: http://nevercertain.com/2011/02/03/scala-android-intellij-win-part-2-simple-build-tool.html
    [3]: https://github.com/mpeltonen/sbt-idea
    [4]: http://www.scalatest.org/
