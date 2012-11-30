@@ -13,7 +13,7 @@ While I've been part of a team that used a GA in one of our projects, I wasn't r
 
 ### Clojure
 
-Clojure is the next language I'll learn and possibly fall in love with. What makes Clojure interesting deserves a blog post on its own, but for now I'll say that it's expressive, different (for me), fast (for a dynamically typed language), and it's a Lisp.
+[Clojure](http://clojure.org/) is a modern LISP that runs on the JVM. I chose Clojure for this task mostly because I'm interested in learning the language but also because it seems very natural to me to model a genetic algorithm in terms of things Clojure is good at. Those things being functional transforms and lazy infinite sequences.
 
 ### Robby the Robot
 
@@ -53,7 +53,7 @@ With a clear understanding of the problem I'm trying to solve and what my core d
 
 #### Mapping a state to an action
 
-I would need a way to take a given state (e.g. north:clean south:clean west:dirty east:clean current:dirty) to a given action using Robby's DNA. Essentially this means I needed a way to convert that state to an index in his array of genes. To do this I decided to build a map with states for keys and array indices as values.
+I would need a way to map a given state (e.g. north:clean south:clean west:dirty east:clean current:dirty) to a given action using a given agent's genome. Essentially this means I needed a way to convert that state to an index in the agent's array of genes. To do this I decided to build a map with states for keys and array indices as values.
 
 This map would have 243 entries in it so writing it by hand was out of the question. I know what I really need is an array of each state and from that I can pretty easily construct a map using the reduce function (Clojure's left fold). Luckily I had a hunch that Clojure's [for](http://clojure.github.com/clojure/clojure.core-api.html#clojure.core/for) function would be a list comprehension that takes an arbitrary number of lists. This lets me write what would be an ugly set of nested for loops in Java or C# in a pretty concise way.
 
