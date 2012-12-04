@@ -9,11 +9,15 @@ I implemented a simple genetic algorithm in Clojure to better familiarize myself
 
 ### Generic algorithms
 
+<div style="float:right">
+  <img alt="DNA" src="/images/dna.JPG"/>
+</div>
 While I've been part of a team that used a GA in one of our projects, I wasn't really involved in the coding or design of it. Genetic algorithms are one of those things that I understood at a high level but not the details.
 
-### Clojure
+![Clojure](/images/clojure.png)
 
 [Clojure](http://clojure.org/) is a modern LISP that runs on the JVM. I chose Clojure for this task mostly because I'm interested in learning the language but also because it seems very natural to me to model a genetic algorithm in terms of things Clojure is good at. Those things being functional transforms and lazy infinite sequences.
+
 
 ### Robby the Robot
 
