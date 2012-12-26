@@ -2,7 +2,7 @@
 title: A simple genetic algorithm in Clojure
 published: true
 layout: post
-tags: swdev clojure genetic-algorithms complexity-theory
+tags: swdev clojure complexity-theory
 ---
 
 Interested in Clojure and genetic algorithms? You're in the right place. Let's implement a simple genetic algorithm (GA) in Clojure.
