@@ -1,5 +1,5 @@
 ---
-title: Writing a genetic algorithm in Clojure
+title: A simple genetic algorithm in Clojure
 published: true
 layout: post
 tags: swdev clojure genetic-algorithms complexity-theory
@@ -12,7 +12,7 @@ Interested in Clojure and genetic algorithms? You're in the right place. Let's i
 <div style="float:right">
   <img alt="DNA" src="/images/dna.JPG"/>
 </div>
-While I've been part of a team that used a GA in one of our projects, I wasn't really involved in the coding or design of it. Genetic algorithms are one of those things that I understood at a high level but not the details.
+Genetic algorithms are a way to evolve an algorithm over time in a survival-of-the-fittest fashion. The idea is to incorporate key aspects of biological evolution such as selection, mutation, and cross-over (breeding). Genetic algorithms are good for avoiding local optimas in finely tuned solutions while also not throwing away every bit of a solution when adjusting the search space.
 
 ![Clojure](/images/clojure.png)
 
@@ -49,11 +49,9 @@ Robby's DNA comprises 243 genes which represent each possible state of his world
 
 MM describes how she implemented crossover in terms of this datastructure. When given two parents to breed she simply picks a random index within their DNA (from 0 to 242) and takes up to that index from the first parent and everything after that index from the second parent. The result is a new child.
 
-I decided to use the same sort of datastructure in my implementation except I'd use keywords instead of ints to improve readability. Mimicking her datastructure turned out to be somewhat painful...I'll describe later.
-
 ### Datastructure overview
 
-The execution consists of many instances of two datastructures: rooms and agents.
+An execution of this program will consists of many instances of two datastructures: rooms and agents.
 
 #### Room
 
@@ -90,26 +88,26 @@ So let's talk about how we specify which state each gene in Robby's DNA represen
 
 #### Going from a state to an action
 
-First I need a way to represent a state given an agent, room and position. For that I used this function.
+First we need a way to determine a state given an agent, room and position. A simple map of each direction and whether it's clean, dirty, or a wall should do:
 
 <script src="https://gist.github.com/4215778.js"> </script>
 
+A state is a map of direction to contents.
+
 Now we need to associate states like that with indices into Robby's genome.
 
-Robby's genome has 243 entries in it so writing the mapping by hand is out of the question.
-I would need a way to map a given state (e.g. north:clean south:clean west:dirty east:clean current:dirty) to a given action using a given agent's genome. Essentially this means I needed a way to convert that state to an index in the agent's array of genes. To do this I decided to build a map with states for keys and array indices as values.
+Robby's genome has 243 entries in it, thus writing the mapping by hand is out of the question.
+We need a way to map a given state (e.g. north:clean south:clean west:dirty east:clean current:dirty) to a an action using a given agent's genome. With the datastructues we have this means writing another map of state to gene index.
 
-This map would have 243 entries in it so writing it by hand was out of the question. I know what I really need is an array of each state and from that I can pretty easily construct a map using the reduce function (Clojure's left fold). Luckily I had a hunch that Clojure's [for](http://clojure.github.com/clojure/clojure.core-api.html#clojure.core/for) function would be a list comprehension that takes an arbitrary number of lists. This lets me write what would be an ugly set of nested for loops in Java or C# in a pretty concise way.
+If we're not going to write this map by hand then what do we do? Well we can start by generating an array of every possible state using Clojure's [for](http://clojure.github.com/clojure/clojure.core-api.html#clojure.core/for) function.
 
-After that I looked around for an easier way to build a map from an array and found the handy [zipmap](http://clojure.github.com/clojure/clojure.core-api.html#clojure.core/zipmap) function.
+With that we can generate every possible state in one vector and then use Clojure's handy [zipmap](http://clojure.github.com/clojure/clojure.core-api.html#clojure.core/zipmap) function to create a resulting map of state to integer.
 
 The end result looked like this
 
 <script src="https://gist.github.com/4118377.js"> </script>
 
-Now I could go from an agent, room and coordinates in that room to derive an action that agent should take. 
+Now we can determine an agent's state from the agent, room and position within that room. Then go from a state to an index into an agent's genome to determine which action the agent will take.
 
-She uses the evolved algorithm to demonstrate the ingenuity of evolution.
+That's enough for now, next time we'll talk about crossover, mutation and using infinite sequences to represent things like generations and and agent's lifetime in a room.
 
-
-[jvm]: The JVM is great.
