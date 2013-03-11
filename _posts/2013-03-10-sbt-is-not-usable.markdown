@@ -9,13 +9,11 @@ tags: swdev scala sbt build-tools
 
 SBT is not usable[*](#usable).
 
-A few weeks ago I spent a week helping a project team during their [Iteration Zero](http://foo.com). The team is building a web application using [Play](http://www.playframework.org) powered by several micro-services using another Scala web framework. They are using SBT as their build tool. My mission was to help them get some of their build related infrastructure bits going such as running unit, functional and integration tests, and packaging the respective applications for deployment.
+A few weeks ago I spent a week helping a project team during their [Iteration Zero](http://peterschuh.com/?p=129). The team is building a web application using [Play](http://www.playframework.org) powered by several micro-services using another Scala web framework. They are using SBT as their build tool. My mission was to help them get some of their build related infrastructure bits going such as running unit, functional and integration tests, and packaging the respective applications for deployment.
 
 Since I haven't spent time with SBT in quite a while I had to re-learn some of its concepts. My pair and I even stumbled across a [gist of mine](https://gist.github.com/jbrechtel/1629639) while searching for how to serialize a task's dependencies. Even though this wasn't my first time with SBT I, unfortunately, made many of the same mistakes understanding it.
 
-I'm not exactly sure what was going on in my head when I wrote that gist, but it *looks* like I didn't really understand what was going on. Ultimately the gist helped me and my pair figure out what we wanted to do but a comment would have been warranted for that rather unclear approach.
-
-SBT looks quite foreign coming from from tools like Rake, Ant, Nant or Leiningen. Actually, I'm not sure which, if any other, build tool would be comparable to SBT.
+I'm not exactly sure what was going on in my head when I wrote that gist, but it *looks* like I didn't really understand what was going on. Ultimately the gist helped me and my pair figure out what we wanted to do but a comment would have been warranted for my rather unclear approach.
 
 ##### SBT has a few things going for it
 
