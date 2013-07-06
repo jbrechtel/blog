@@ -13,5 +13,7 @@ end
 
 desc 'deploy site'
 task :deploy do
-  sh "rsync -avzr _site/ www-data@nevercertain.com:/www/nevercertain/"
+  user = ENV['BLOG_USER'] || 'www-data'
+  host = ENV['BLOG_HOST'] || 'nevercertain.com'
+  sh "rsync -avzr _site/ #{user}@#{host}:/srv/www/nevercertain/"
 end
