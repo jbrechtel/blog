@@ -81,18 +81,3 @@ function sendChatMessage(event) {
   $('#chat_message').val('');
   ws.send(message);
 }
-
-$(document).ready(function() {
-  checkChat();
-  $('#chat_send').click(sendChatMessage);
-  $('#chat_message').keypress(function(event) {
-    if(event.which == 13) {
-      sendChatMessage(event);
-    }
-  });
-
-  $('#chat_target').click(function(event) {
-    event.preventDefault();
-    $('#chat_content').toggle();
-  });
-});
