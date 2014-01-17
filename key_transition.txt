@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I am transitioning my GnuPG keys from an older 2048bit master key to a 8192bit master key.
+
+The old key info is below
+- ----------------------------------
+KeyID: E986A714
+Fingerprint: 029B A2F0 C394 6D48 9EE2  2E61 827A ED55 E986 A714
+
+
+The new key info is below
+- ----------------------------------
+KeyID: EF348B88
+Fingerprint: 1535 B447 793A DC4B EE01  66D2 803B CB2D EF34 8B88
+
+You can find the new key on keys.gnupg.net.
+
+You can fetch the new key by running
+
+   gpg --keyserver keys.gnupg.net --recv-key EF348B88
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.22 (GNU/Linux)
+Comment: GPGTools - http://gpgtools.org
+
+iQQcBAEBAgAGBQJSq45HAAoJEEvFVppoQRTy23If/3B7vdLdx3liTNtK6pvsJhbF
+tclBykCNVUW//1P2JAsJEtbuPjfuPN2XUDRDxSKbSXm7ODsVxu1+1t4TY0Y9q4u4
+TgZhpXkUGo1V0UAo0t/eKDEcw6f6VfVKypIHEZ8xMZ3M1HcRdwoecSivgoW9Nnv6
+y25tu5PF4VqoIfXDHFRFH82VslXYTIBwIsqRjunT3CQNPTbQf2kcZ3L7NnDoprHn
+PYOjnlmAEPj4K/jdWaBnFYnOM7OXZpEtsIUi7wVHPB+Ry5dgbrFT9fCL2xq1F/3C
+AJEbIvtRyNgV2CpJ/Y4unBi0BlgGvg3VQGecT2eygBlpG70LB39jjHoTeYOUZKUJ
+sj7kLTG/0vgjf9Y5DbNAL0OviJnviRbqLv6JjJnjGVpttsImMYVGvhp1fn5cxMYu
+AKEbJ9NSLXQhzXUSZipWQ6M45r0H0mEme5A4hDbJVVCqa/+HARfPV/G5imdwBwbs
+egsR1ekwZ8bULQDIzwwSWEds7vuAfC2vHYxe+Bzcwv80HZUr6XPUnGN1dCHbl3+w
+dJOL7QzkGEQD946qrHfW5MuA6+2TW0z+tx9kSZiWnc3GB7EkXoMd7n0ge5H5eYHT
+TL9K2HIPe64kS6QObVP4pjMbQZvg+EnEdqyDvPMGKvy/4XQAS1qU0PRrvdPZudy6
+t1MaKn472WzC/Pw29hADLh3pV9YTSXRd0HXHD6ODoGbzMNgNWXUCqZHGxrc7ZHm1
+wLOlRXjMcr7fsCyCoF8g2+nZC+hJu3rH/JXJumGrDgEWxpgQxM32MWlayq1H6bPO
+nvI1BKfKtuWNAy6lQeZ6ib4Q4etRLwzBsixkUaV0RIXyMz+oNGA7c/pRzVIrYrll
+Q0KbaT5/D6f0/BmZfTWcnnK6f5C34CbqOLhl7FrHeywqKyi5LmyheR7/HE1eEg03
+bn5+juAV5nUKv0CvJKljGzpvUW6IXnuBoNe4N7lLbfmerFPeIZviAZ8k9Pm72ccL
+oaWNVB1tSNQZOh6i6qhSI7i6QmDT2zmlBNu3sYJzCTnR6IYXR2yUUfLKEN6GmFWs
+Uz7aiHUGoWZkmkRhmXzIiZ9HLRPhycoSt93hNQYI/bXjUcxORZJNszJZegWQwlXN
+aUIWyATKvcSPB7I+wfjuY6GmYiAcHqJOElEOsa/RCT6hVHr9TRg7sPL4OYvLZQsD
+J0lWN3iIyIcGVwUtfWeiha6Ew329KKUhNOuuFOIudqbWRaXGwNvf7fA5EpWOKHtS
+ogSX2Ga78u2a/OuLki/OX+M2WlwVjfhWfqTNV4Hc7OyIJVAEEwE4dWfLCjWmqPHp
+g2jEmwBKnmTPd6SA7VdfoeMEjHA7pOaprPuhl4yK/4eqWtYp/jON5soenRMdak4=
+=P+Ba
+-----END PGP SIGNATURE-----
