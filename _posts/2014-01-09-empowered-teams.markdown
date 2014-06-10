@@ -1,6 +1,6 @@
 ---
 title: Trust
-published: true
+published: false
 layout: post
 tags: swdev teams decisions
 ---

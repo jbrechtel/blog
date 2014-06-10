@@ -5,6 +5,7 @@ server_port: 4000
 base-url:    /
 
 source:      .
+exclude:     vendor
 destination: ./_site
 plugins:     ./_plugins
 

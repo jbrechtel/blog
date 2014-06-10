@@ -1,4 +1,5 @@
 require 'rake'
+require 'bundler/setup'
 
 task :default => [:build, :deploy]
 
@@ -8,7 +9,7 @@ end
 
 desc 'Build and preview site locally'
 task :preview do
-  sh "jekyll --auto --server"
+  sh "jekyll serve --watch"
 end
 
 desc 'deploy site'
