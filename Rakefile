@@ -9,12 +9,12 @@ end
 
 desc 'Build and preview site locally'
 task :preview do
-  sh "jekyll serve --watch"
+  sh "jekyll serve -H 0.0.0.0 --watch"
 end
 
 desc 'deploy site'
 task :deploy do
-  user = ENV['BLOG_USER'] || 'www-data'
+  user = ENV['BLOG_USER'] || 'jbrechtel'
   host = ENV['BLOG_HOST'] || 'nevercertain.com'
-  sh "rsync -avzr _site/ #{user}@#{host}:/srv/www/nevercertain/"
+  sh "rsync -avzr _site/ #{user}@#{host}:www/nevercertain/"
 end
